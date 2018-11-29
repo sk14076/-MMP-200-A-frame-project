@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+   
+      <a-sky color="#ECECEC"></a-sky>
+        
+        <!---lambo--->
+        <a-assets>
+            <a-assets-item id="lamb" src="model/Avent.obj"></a-assets-item>
+            <a-assets-item id="extr" src="model/Avent.mtl"></a-assets-item>    
+        </a-assets>
+        <a-obj-model src="#lamb" mtl="#extr" position="0 -1 0"></a-obj-model>
+        
+        <!---lamp front wall--->
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item>    
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="-5 -0.5 -5.2"></a-obj-model>
+        
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item>
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="0 -0.5 -5.2"></a-obj-model>
+        
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item> 
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="5 0 -5.2"></a-obj-model>
+        
+        <!---lamp left wall--->
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item> 
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="-6.7 0 1.5" rotation="0 90 0"></a-obj-model>
+        
+        <!---lamp right wall--->
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item> 
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="6.7 0 1.5" rotation="0 -90 0"></a-obj-model>
+        
+        <!---lamp back wall--->
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item> 
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="-5 0 8.2" rotation="0 180 0"></a-obj-model>
+        
+        <a-assets>
+            <a-assets-item id="object" src="model/lamp.obj"></a-assets-item>
+            <a-assets-item id="material" src="model/lamp.mtl"></a-assets-item> 
+        </a-assets>
+        <a-obj-model src="#object" mtl="#material" position="5 -0.7 8.2" rotation="0 180 0"></a-obj-model>
+        
+        
+        
+        <!---front wall--->
+        <a-image position="0 1.5 -6" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="5 1.5 -6" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="-5 1.5 -6" src="img/wall.jpg" width="5" height="5"></a-image>
+        
+        <!---left sidwalls--->
+        <a-image position="-7.5 1.5 -3.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="-7.5 1.5 1.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="-7.5 1.5 6.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        
+        <!---right sidwalls--->
+        <a-image position="7.5 1.5 -3.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="7.5 1.5 1.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="7.5 1.5 6.5" rotation="0 90 0" src="img/wall.jpg" width="5" height="5"></a-image>
+        
+        <!---back wall--->
+        
+        <a-image position="0 1.5 9" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="5 1.5 9" src="img/wall.jpg" width="5" height="5"></a-image>
+        <a-image position="-5 1.5 9" src="img/wall.jpg" width="5" height="5"></a-image>
+        
+        <!---Flooring--->
+        <a-image position="0 -1 -3.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="0 -1 1.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="0 -1 6.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        
+        <a-image position="5 -1 -3.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="5 -1 1.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="5 -1 6.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        
+        <a-image position="-5 -1 -3.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="-5 -1 1.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        <a-image position="-5 -1 6.5" rotation="-90 0 0" width="5" height="5" src="img/flooring.jpg"></a-image>
+        
+        <!---art works front--->
+        <a-image position="0 1.5 -5.9" src="img/art1.jpg" width="4.5" height="2"></a-image>
+        <a-image position="5 1.5 -5.9" src="img/art2.jpeg" width="3" height="3"></a-image>
+        <a-image position="-5 1.5 -5.9" src="img/art5.jpg" width="3" height="2"></a-image>
+        
+        <!---art works right sidwalls--->
+        <a-image position="7.4 1.3 1.5" rotation="0 90 0" src="img/art4.jpg" width="4" height="4"></a-image>
+       
+        <!---art works left sidwalls--->
+        <a-image position="-7.4 1.5 1.5" rotation="0 90 0" src="img/art7.jpg" width="3" height="3"></a-image>
+        
+        
+        <!---art works back--->
+        <a-image position="5 1.5 8.9" src="img/art3.jpg" width="3" height="1.2"></a-image>
+        <a-image position="-5 1.3 8.9" src="img/art6.jpg" width="3.5" height="4"></a-image>
+        
+      </a-scene>
+    </body>
+</html>
